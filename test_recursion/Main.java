@@ -28,8 +28,6 @@ public class Main {
         int potenciaInt = (int)potencia;
         int numeroMovimentos = potenciaInt - 1;
         System.out.println("Quantidade minima de movimentos: " + numeroMovimentos + " movimentos.");
-
-
     }
 }
 
