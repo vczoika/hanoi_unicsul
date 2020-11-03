@@ -20,6 +20,8 @@ public class Main {
         Integer numeroDiscos = discos.nextInt();
         int n = numeroDiscos;
         torreInfo(n, 'A', 'C', 'B');
+
+        // Conta para descobrir numero minimo de movimentos. 2^n - 1
         int baseMovimentos = 2;
         double potencia;
         potencia = Math.pow(baseMovimentos, numeroDiscos);
