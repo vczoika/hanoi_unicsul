@@ -20,6 +20,14 @@ public class Main {
         Integer numeroDiscos = discos.nextInt();
         int n = numeroDiscos;
         torreInfo(n, 'A', 'C', 'B');
+        int baseMovimentos = 2;
+        double potencia;
+        potencia = Math.pow(baseMovimentos, numeroDiscos);
+        int potenciaInt = (int)potencia;
+        int numeroMovimentos = potenciaInt - 1;
+        System.out.println("Quantidade minima de movimentos: " + numeroMovimentos + " movimentos.");
+
+
     }
 }
 
