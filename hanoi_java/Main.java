@@ -3,16 +3,18 @@ import java.util.Scanner;
 
 public class Main {
 
+    static int contador = 1;
     static void torreInfo(int n, char hasteOrigem, char hasteMover, char hasteAuxiliar) {
         if (n == 1) {
-            System.out.println("[disco 1] da haste " +  hasteOrigem + " para a haste " + hasteMover);
+            System.out.println("[disco 1] da haste " +  hasteOrigem + " para a haste " + hasteMover + ". \n" + (contador++) + " movimento(s)");
             return;
         }
 
         torreInfo(n-1, hasteOrigem, hasteAuxiliar, hasteMover);
-        System.out.println("[disco " + n + "] da haste " +  hasteOrigem + " para a haste " + hasteMover);
+        System.out.println("[disco " + n + "] da haste " +  hasteOrigem + " para a haste " + hasteMover + ". \n" + (contador++) + " movimento(s)");
         torreInfo(n-1, hasteAuxiliar, hasteMover, hasteOrigem);
     }
+
 
     public static void main(String args[]) {
         Scanner discos = new Scanner(System.in);
