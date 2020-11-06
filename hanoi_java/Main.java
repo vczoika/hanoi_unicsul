@@ -32,3 +32,5 @@ public class Main {
         System.out.println("Quantidade minima de movimentos: " + numeroMovimentos + " movimentos.");
     }
 }
+
+// teste
